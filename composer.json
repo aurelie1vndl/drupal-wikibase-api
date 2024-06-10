@@ -30,7 +30,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "aurelie1vndl/drupal-mediawiki-api-base": "dev-main",
+        "aurelie1vndl/drupal-mediawiki-api-base": "*",
         "addwiki/mediawiki-datamodel": "^3.1",
         "addwiki/wikibase-datamodel": "^3.1",
         "serialization/serialization": "~3.2||~4.0",
