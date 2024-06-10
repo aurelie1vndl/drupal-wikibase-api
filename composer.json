@@ -28,7 +28,7 @@
             "url": "https://github.com/aurelie1vndl/drupal-mediawiki-api-base"
         }
     ],
-    "require": {s
+    "require": {
         "php": ">=7.4",
         "aurelie1vndl/drupal-mediawiki-api-base": "dev-main",
         "addwiki/mediawiki-datamodel": "^3.1",
