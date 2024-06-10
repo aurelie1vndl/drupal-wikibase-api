@@ -1,5 +1,5 @@
 {
-    "name": "addwiki/wikibase-api",
+    "name": "aurelie1vndl/drupal-wikibase-api",
     "type": "library",
     "description": "Wikibase API library",
     "keywords": ["MediaWiki", "Wikibase", "Wikidata", "API"],
@@ -24,13 +24,13 @@
     },
     "repositories": [
         {
-            "type": "path",
+            "type": "vcs",
             "url": "https://github.com/aurelie1vndl/drupal-mediawiki-api-base"
         }
     ],
     "require": {
         "php": ">=7.4",
-        "addwiki/mediawiki-api-base": "dev-composer-hotfix",
+        "aurelie1vndl/drupal-mediawiki-api-base": "dev-composer-hotfix",
         "addwiki/mediawiki-datamodel": "^3.1",
         "addwiki/wikibase-datamodel": "^3.1",
         "serialization/serialization": "~3.2||~4.0",
@@ -59,11 +59,6 @@
         "psr-4": {
             "Addwiki\\Wikibase\\Api\\Tests\\Unit\\": "tests/unit/",
             "Addwiki\\Wikibase\\Api\\Tests\\Integration\\": "tests/integration/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-main": "3.1-dev"
         }
     },
     "minimum-stability": "dev",
