@@ -1,5 +1,5 @@
 {
-    "name": "aurelie1vndl/drupal-wikibase-api",
+    "name": "addwiki/wikibase-api",
     "type": "library",
     "description": "Wikibase API library",
     "keywords": ["MediaWiki", "Wikibase", "Wikidata", "API"],
@@ -22,21 +22,42 @@
             "@phpunit"
         ]
     },
-    "repositories": [
-        {
+    "repositories": {
+        "mediawiki-api-base": {
             "type": "vcs",
-            "url": "https://github.com/aurelie1vndl/drupal-mediawiki-api-base"
+            "url": "https://github.com/aurelie1vndl/drupal-mediawiki-api-base.git",
+            "exclude": ["mediawiki/oauthclient"]
+        },
+        "data-model": {
+            "type": "vcs",
+            "url": "https://github.com/aurelie1vndl/WikibaseDataModel.git"
+        },
+        "wikibase-datamodel": {
+            "type": "vcs",
+            "url": "https://github.com/aurelie1vndl/wikibase-datamodel.git"
+        },
+        "data-model-serialization": {
+            "type": "vcs",
+            "url": "https://github.com/aurelie1vndl/WikibaseDataModelSerialization.git"
+        },
+        "data-model-services": {
+            "type": "vcs",
+            "url": "https://github.com/aurelie1vndl/WikibaseDataModelServices.git"
+        },
+        "mediawiki-datamodel": {
+            "type": "vcs",
+            "url": "https://github.com/aurelie1vndl/mediawiki-datamodel.git"
         }
-    ],
+    },
     "require": {
         "php": ">=7.4",
-        "aurelie1vndl/drupal-mediawiki-api-base": "*",
-        "addwiki/mediawiki-datamodel": "^3.1",
-        "addwiki/wikibase-datamodel": "^3.1",
+        "addwiki/mediawiki-api-base": "*",
+        "addwiki/mediawiki-datamodel": "dev-main",
+        "addwiki/wikibase-datamodel": "dev-main",
         "serialization/serialization": "~3.2||~4.0",
-        "wikibase/data-model": "~9.2||~8.0",
-        "wikibase/data-model-serialization": "^2.9.1",
-        "wikibase/data-model-services": "^5.4.0"
+        "wikibase/data-model": "dev-master",
+        "wikibase/data-model-serialization": "dev-master",
+        "wikibase/data-model-services": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "~9",
